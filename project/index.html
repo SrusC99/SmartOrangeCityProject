@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Smart Orange City</title>
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+	<link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+<style>
+		table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+		}
+		
+		td{
+		border: 1px dashed #e68c8c;
+		text-align: left;
+		padding: 25px;
+		}
+		
+		tr:nth-child(even) {
+		}
+</style>
+<body>
+
+	<div class="page-wrapper">
+
+		<!-- Preloader -->
+		<div class="preloader"></div>
+
+		<!-- Main Header-->
+		<header class="main-header header-style-one">
+
+			<!-- Header Upper -->
+			<div class="header-upper">
+				<div class="auto-container">
+					<div class="clearfix">
+
+						<div class="pull-left logo-box">
+							<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+						</div>
+
+						<div class="nav-outer clearfix">
+							<!-- Mobile Navigation Toggler -->
+							<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+							<!-- Main Menu -->
+							<nav class="main-menu navbar-expand-md">
+								<div class="navbar-header">
+									<button class="navbar-toggler" type="button" data-toggle="collapse"
+										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+										aria-expanded="false" aria-label="Toggle navigation">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<div class="navbar-collapse show collapse clearfix" id="navbarSupportedContent">
+									<ul class="navigation clearfix">
+										<li class="current dropdown"><a href="#">Home</a>
+
+										</li>
+										<li><a href="#weather">Weather</a>
+
+										</li>
+										<li><a href="#helpline">Helpline</a>
+
+										</li>
+										<li><a href="#contactus">Contact us</a></li>
+									</ul>
+								</div>
+
+							</nav>
+
+							<!-- Outer Box -->
+							<div class="outer-box">
+
+								<!-- Login Box -->
+								<a href="login.php" class="login-box"><span class="icon fa fa-lock"></span> Login</a>
+
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--End Header Upper-->
+
+			<!-- Mobile Menu  -->
+			<div class="mobile-menu">
+				<div class="menu-backdrop"></div>
+				<div class="close-btn"><span class="icon fa fa-remove"></span></div>
+
+				<nav class="menu-box">
+					<div class="nav-logo"><a href="index-2.html"><img src="images/logo.png" alt="" title=""></a></div>
+					<div class="menu-outer">
+						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+					</div>
+				</nav>
+			</div><!-- End Mobile Menu -->
+
+		</header>
+		<!--End Main Header -->
+
+		<!-- Hidden Navigation Bar -->
+		<section class="hidden-bar right-align">
+
+			<div class="hidden-bar-closer">
+				<button><span class="flaticon-multiply"></span></button>
+			</div>
+
+
+		</section>
+		<!-- End / Hidden Bar -->
+
+		<!-- Banner Section -->
+		<section class="banner-section">
+			<div class="banner-carousel owl-theme owl-carousel">
+				<!-- Slide Item -->
+				<div class="slide-item">
+					<div class="image-layer" style="background-image:url(images/main-slider/1.jpg)"></div>
+					<div class="auto-container">
+						<div class="content-box">
+							<h1> SMART <label style="color:orange;">ORANGE</label> CITY </h1>
+							<div class="text">It is famous for the Nagpur Orange and is known as the "Orange City" for
+								being a major trade centre of oranges cultivated in the region. Nagpur is the biggest
+								producer of Oranges in India with many large Orange gardens located in Nagpur and nearby
+								Areas. Nagpur oranges are best in quality and rich in vitamin and nutrition.</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide Item -->
+				<div class="slide-item">
+					<div class="image-layer" style="background-image:url(images/main-slider/1.jpg)"></div>
+					<div class="auto-container">
+						<div class="content-box">
+							<h1> DISCOVER <label style="color:pink;">OUR LOVELY</label> CITY</h1>
+							<div class="text"><h3>WHERE YOU ARE ALWAYS WELCOME!<h3></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide Item -->
+				<div class="slide-item">
+					<div class="image-layer" style="background-image:url(images/main-slider/1.jpg)"></div>
+					<div class="auto-container">
+						<div class="content-box">
+							<h1> EXPLORE TO <label style="color:pink;">OUR MOST POPULAR</label> PLACES </h1>
+							<div class="text"><h2>Enjoy! </h2></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="popular-section" id="weather">
+			<div class="auto-container">
+				<!-- Sec Title -->
+				<div class="sec-title centered">
+					<br><br>
+					<a class="weatherwidget-io" s href="https://forecast7.com/en/21d1579d09/nagpur/"
+						data-label_1="NAGPUR" data-label_2="WEATHER" data-theme="original">NAGPUR WEATHER</a>
+					<script>
+						!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+					</script>
+
+				</div>
+
+			</div>
+		</section>
+		
+		
+		<section class="news-section">
+			<div class="auto-container">
+				<div class="row clearfix">
+
+					<!-- News Block -->
+					<div class="news-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/g1.jpg" alt="" style="height:350px;" />
+								<div class="overlay-box">
+									<div class="content">
+										<h5><a href="#"> Swaminarayan Temple has been meeting
+												devotees from far. </a></h5>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block -->
+					<div class="news-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/images (3).jpg" alt="" style="height:350px;" />
+								<div class="overlay-box">
+									<div class="content">
+										<h5><a href="#">Tekdi Ganesh is an immense importance
+												among the locals. </a></h5>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block -->
+					<div class="news-block col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/images (2).jpg" alt="" />
+								<div class="overlay-box">
+									<div class="content">
+										<h5><a href="#">Tiger Safari at Karhandla Wildlife
+												Santury</a></h5>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End News Section -->
+
+
+
+		<!-- Popular Section -->
+		<section class="popular-section">
+			<div class="auto-container">
+				<!-- Sec Title -->
+				<div class="sec-title centered">
+					<h2>Top Bloggers in Nagpur 2020</h2>
+				</div>
+				<div class="row clearfix">
+
+					<!-- News Block Two -->
+					<div class="news-block-two col-lg-8 col-md-12 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/metro.jpg" alt="" />
+								<div class="overlay-box">
+									<div class="content">
+										<div class="category">Travel</div>
+										<h4><a href="articles-detail-two.html">Fastest Growing Nagpur Metro</a></h4>
+										<div class="text">#MahaMetro is executing a 3.14kM 3-layer Transport system
+											<br>#DoubleDecker including metro stations on existing National Highway on
+											<br> #WardhaRoad in Nagpur</div>
+										<a href="articles-detail-two.html" class="read-more">Read More</a><br>
+										<a href="https://www.youtube.com/watch?v=a0zCGhGhyKQ&feature=youtu.be"
+											class="lightbox-image video-box"><span class="fa fa-play"><i
+													class="ripple"></i></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Three -->
+					<div class="news-block-two style-two col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/author-2.jpg" alt="" / style="height:535px;">
+								<div class="overlay-box">
+									<div class="content">
+										<div class="category">Travel,Food</div>
+										<h4><a href="articles-detail-two.html">Nagpur's food connoisseurs Tanay &
+												Trishika. <br><br>Follow us to know what's cooking in and around
+												Nagpur...</a></h4>
+										<div class="post-date">October 24, 2020</div>
+										<div class="author-info">
+											@thehungryclones <br>
+											Tanay & Trishika Shahu
+										</div>
+									</div>
+									<a href="#" class="read-more">Read More</a><br>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Two -->
+					<div class="news-block-two style-two col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/author-1.jpg" alt="" / style="height:462px;">
+								<div class="overlay-box">
+									<div class="content">
+										<div class="category">Food</div>
+										<h4><a href="#">Music, Travel, TV and Media, Food, Baker,
+												Chef</a></h4>
+										<div class="post-date">October 24, 2020</div>
+										<div class="author-info">
+											@parthbajaj <br>
+											Parth Bajaj
+										</div>
+									</div>
+									<a href="#" class="read-more">Read More</a><br>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Three / Style Two -->
+					<div class="news-block-two style-two col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/author-3.jpg" alt="" / style="height:462px;">
+								<div class="overlay-box">
+									<div class="content">
+										<div class="category">Fashion</div>
+										<h4><a href="#">Style is a way to say who you are without
+												having to speak</a></h4>
+										<div class="post-date">October 24, 2020</div>
+										<div class="author-info">
+											@riakriplani <br>
+											Ria Kriplani
+										</div>
+									</div>
+									<a href="#" class="read-more">Read More</a><br>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Two -->
+					<div class="news-block-two style-two col-lg-4 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/author-4.jpg" alt="" / style="height:462px;">
+								<div class="overlay-box">
+									<div class="content">
+										<div class="category">Travel</div>
+										<h4><a href="#">Take only memories, leave only
+												footprints</a></h4>
+										<div class="post-date">October 24, 2020</div>
+										<div class="author-info">
+											@nagpur_buzz <br>
+											Laksh|Nagpur Buzz
+										</div>
+									</div>
+									<a href="#" class="read-more">Read More</a><br>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Articles Section -->
+		<section class="articles-section" style="background-image: url(images/background/1.jpg)">
+			<div class="auto-container">
+				<!-- Sec Title -->
+				<div class="sec-title light centered">
+					<h2>Fun Places Of Nagpur</h2>
+				</div>
+				<div class="four-item-carousel owl-carousel owl-theme">
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/summer.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Summer Fun</div>
+								<h5><a href="articles-detail-two.html">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">01</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/lake.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Lakes</div>
+								<h5><a href="">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="" class="read-more">Read More</a>
+								<div class="block-number">02</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/resto.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Food</div>
+								<h5><a href="#">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">03</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/shopping.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Shopping</div>
+								<h5><a href="#">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">04</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/summer.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Summer Fun</div>
+								<h5><a href="#">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">01</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/lake.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Lakes</div>
+								<h5><a href="#">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">02</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/resto.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Food</div>
+								<h5><a href="#">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">03</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/shopping.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Shopping</div>
+								<h5><a href="#">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">04</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/summer.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Summer Fun</div>
+								<h5><a href="#">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">01</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/lake.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Lakes</div>
+								<h5><a href="#">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">02</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/resto.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Food</div>
+								<h5><a href="#">Travelling around the holidays is always a bit
+										more </a></h5>
+								<div class="post-date">October 24, 2020</div>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">03</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- News Block Four -->
+					<div class="news-block-four">
+						<div class="inner-box">
+							<div class="image">
+								<img src="images/resource/shopping.jpg" alt="" / style="height: 193px;">
+							</div>
+							<div class="lower-content">
+								<div class="category">Shopping</div>
+								<h5><a href="#">Travelling around the holidays is always a bit
+										more </a></h5>
+								<a href="#" class="read-more">Read More</a>
+								<div class="block-number">04</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+	</div>
+	</div>
+	<br><br>
+<section class="popular-section" id="helpline">
+			<div class="auto-container">
+				<!-- Sec Title -->
+				<div class="sec-title centered">
+					<h2>Helpline-District Nagpur</h2>
+				</div>
+				<div class="row clearfix">
+
+				<table>
+				<tr>
+					<td>Citizen's Call center -<br><h4><b>155300</b></h4></td>
+					<td>Child Helpline -<br><h4><b>1098</b></h4></td>
+				</tr>
+				<tr>
+					<td>Women Helpline -<br><h4><b>1091</b></h4></td>
+					<td>Crime Branch-<br><h4><b>0712-2566766</b></h4></td>
+				</tr>
+				<tr>
+					<td>NIC Service Desk -<br><h4><b>1800-111-555</b></h4></td>
+					<td>Ambulance -<br><h4><b>102, 108</b></h4></td>
+				</tr>
+				<tr>
+					<td>PDS Helpline -<br><h4><b>1800-22-4950</b></h4></td>
+					<td>Social Service Branch (SSB)<br><h4><b>0712-2566628</b></h4></td>
+				</tr>
+				
+				</table>
+			</div>
+		</div>
+</section>
+	
+	<!-- Sidebar Side -->
+	<div class="sidebar-side col-lg-3 col-md-12 col-sm-12">
+		<aside class="sidebar">
+
+			<!-- News Carousel Widget -->
+
+			<div class="sidebar-widget news-carousel-widget">
+				<div class="widget-content">
+					<div class="single-item-carousel owl-carousel owl-theme">
+
+
+					</div>
+				</div>
+			</div>
+
+
+		</aside>
+	</div>
+
+	</div>
+	</div>
+	</div>
+	<!-- End Sidebar Page Container -->
+
+
+
+	<!-- Main Footer -->
+	<footer class="main-footer" id="contactus">
+		<div class="auto-container">
+			<!-- Widgets Section -->
+			<div class="widgets-section">
+
+				<div class="row clearfix">
+
+					<!-- Big Column -->
+					<div class="big-column col-lg-6 col-md-12 col-sm-12">
+						<div class="row clearfix">
+
+							<!-- Footer Column -->
+							<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget contact-widget">
+									<h4>Contact</h4>
+									<ul>
+										<li><a href="tel:+91-01912704287">Tel: + 91 01912704287</a></li>
+										<li><a href="mailto:www.nagpurorangecity.com">Mail: www.nagpurorangecity.com</a>
+										</li>
+									</ul>
+									<div class="contact-text">Email: nagpurorangecity@gmail.com </div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<!-- Big Column -->
+					<div class="big-column col-lg-6 col-md-12 col-sm-12">
+						<div class="row clearfix">
+
+							<!-- Footer Column -->
+							<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget contact-widget">
+									<h4>Connect with us</h4>
+									<ul class="social-icon-one">
+										<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+										<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+										<li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+										<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+										<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Bottom -->
+			<div class="footer-bottom">
+				<div class="logo">
+					<a href="index-2.html"><img src="images/logo.png" alt="" /></a>
+					<div class="copyright"> 2020. All Rights Reserved.</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- End Main Footer -->
+
+	</div>
+	<!--End pagewrapper-->
+
+	<!--Scroll to top-->
+	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/appear.js"></script>
+	<script src="js/owl.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+<!-- Mirrored from gico.io/magaj/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Oct 2020 11:54:42 GMT -->
+
+</html>
